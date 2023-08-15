@@ -1,7 +1,3 @@
 export const ModileSideBar = () => {
-    return (
-        <div>
-            sideBar
-        </div>
-    )
+  return <div>sideBar</div>
 }

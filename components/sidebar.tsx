@@ -3,7 +3,6 @@
 import { cn } from "@/lib/utils"
 import { Home, Plus, Settings } from "lucide-react"
 import { usePathname, useRouter } from 'next/navigation'
-import { on } from "stream"
 
 export const Sidebar = () => {
 
@@ -44,10 +43,10 @@ export const Sidebar = () => {
                             onClick={() => onNavigate(route.href, route.pro)}
                             key={route.href}
                             className={cn("text-muted-foreground text-xs gour flex p-3 w-full justify-start font-medium cursor-pointer hover:text-primary hover:bg-primary/10 rounded-lg transition",
-                            pathname === route.href && "bg-primary/10 text-primary")}
+                                pathname === route.href && "bg-primary/10 text-primary")}
                         >
                             <div className="flex flex-col gap-y-2 items-center flex-1">
-                                <route.icon className="h-5 w-5" /> 
+                                <route.icon className="h-5 w-5" />
                                 {route.label}
                             </div>
                         </div>
