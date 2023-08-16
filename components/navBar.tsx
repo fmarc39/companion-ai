@@ -4,6 +4,7 @@ import { Menu, Sparkles } from 'lucide-react'
 import { Poppins } from 'next/font/google'
 import Link from 'next/link'
 import { UserButton } from '@clerk/nextjs'
+import { MobileSideBar } from '@/components/mobile-sidebar'
 
 import { cn } from '@/lib/utils'
 import { Button } from '@/components/ui/button'
@@ -18,7 +19,7 @@ export const NavBar = () => {
   return (
     <div className="fixed w-full z-50 flex justify-between items-center py-2 px-4 border-b border-primay/10 bg-secondary h-16">
       <div className="flex items-center">
-        <ModileSideBar className="block md:hidden" />
+        <MobileSideBar />
         <Link href="/">
           <h1
             className={cn(
